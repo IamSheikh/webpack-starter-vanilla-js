@@ -1,0 +1,56 @@
+@use './mixins' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  #githubImg {
+    width: 200px;
+  }
+
+  #card {
+    border: 1px solid lightgray;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 0.5rem;
+
+    h4 {
+      color: gray;
+      font-weight: 400;
+    }
+
+    #img-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
